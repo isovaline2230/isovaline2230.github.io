@@ -6,29 +6,18 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Define title -->
     <title>Wonseop Lim</title>
-
-    <!-- Include favicon. Use, e.g., https://favicon.io/ -->
     <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
-
-    <!-- Include style sheets -->
     <link rel="stylesheet" href="main.css" />
-
-    <!-- Fonts from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
-
-    <!-- Load FontAwesome (for icons) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
     />
-
-    <!-- Load Academicons (for more icons) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
@@ -46,14 +35,16 @@
         display: flex;
         flex-direction: column;
         margin: 20px;
-        text-align: left; /* Ensures the content is left-aligned */
+        text-align: left;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    /* Center the h1 title */
     h1 {
         font-size: 2rem;
         margin-bottom: 10px;
-        text-align: center; /* Center-aligns the title */
+        text-align: center;
     }
 
     h2 {
@@ -62,31 +53,6 @@
         text-align: left;
     }
 
-    /* Container to make sure both columns take the full width */
-    .edu-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    /* Left Column: Mar. 2018 ~ Present */
-    .edu-left {
-        flex: 1;
-        min-width: 200px;
-        font-weight: bold;
-        padding-right: 20px; /* Adds space between columns */
-    }
-
-    /* Right Column: Education Details */
-    .edu-right {
-        flex: 2;
-        min-width: 500px;
-        word-wrap: break-word;
-        line-height: 1.5;
-    }
-
-    /* Style for icons */
     .icons {
         list-style-type: none;
         padding: 0;
@@ -106,17 +72,44 @@
         color: #007bff;
     }
 
-    /* Bold Specific Text */
     .bold {
         font-weight: bold;
     }
+	
+	.italic {
+    font-style: italic;
+	}
+
+    .intro-text {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .additional-text {
+        font-size: 0.8rem;
+        font-weight: normal;
+        margin-left: 5px;
+        color: #666;
+    }
+	
+	.avatar {
+    display: block;
+    margin: 0 auto;
+	}
+
     </style>
+
 </head>
 
 <body>
     <section id="content">
+	<!-- Avatar image -->
+      <img src="image.jpg" alt="Carl Barks" class="avatar" />
         <!-- Text -->
         <h1>Wonseop Lim</h1>
+		<p class="intro-text">
+		I am currently a post-graduate researcher at Seoul National University, South Korea. I graduated from SNU with a BS in Earth and Life Sciences, along with a minor in Statistics. I am interested in both empirical and theoretical questions arising in population genetics and phylogenetics.
+		</p>
 
         <!-- Icons -->
         <ul class="icons">
@@ -137,27 +130,11 @@
             </li>
         </ul>
 
-        <!-- Edu -->
-        <h2>Education</h2>
-        <div class="edu-container">
-            <!-- Left Column: Mar. 2018 ~ Present -->
-            <div class="edu-left">
-                <p><span class="bold">Mar. 2018 ~ Present:</span></p>
-            </div>
-
-            <!-- Right Column: Education Details -->
-            <div class="edu-right">
-                <p>
-                    <span class="bold">BS</span>. Department of Earth Science Education, Seoul National University, Seoul, South Korea
-                </p>
-                <p>
-                    <span class="bold">BS</span>. School of Biological Sciences, Seoul National University, Seoul, South Korea (<span class="bold">Double Major</span>)
-                </p>
-                <p>
-                    <span class="bold">Minor</span>. Department of Statistics, Seoul National University, Seoul, South Korea
-                </p>
-            </div>
-        </div>
+        <!-- Pub -->
+        <h2>Publications<span class="additional-text">(* denotes equal contributions)</span></h2>
+        <p>
+		<span class="bold">Lim, W.</span>, Bang, W. J., Baek, M. J., Park, S. J., & Shin, S. (2024). Phylogeny and evolution of larval feeding mode in the megadiverse superfamily Sciaroidea (Diptera). <span class="italic">Insect Systematics and Diversity, 8</span>(6), ixae035. <a href="https://doi.org/10.1093/isd/ixae035" target="_blank">https://doi.org/10.1093/isd/ixae035</a>
+		</p>
     </section>
 </body>
 
