@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,42 +35,101 @@
       integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
       crossorigin="anonymous"
     />
-  </head>
 
-  <body>
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+        }
+        
+        section#content {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        /* Align Education section to the left */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .edu-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .edu-left {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .edu-right {
+            flex: 1;
+        }
+
+        .edu-right p {
+            margin-bottom: 5px;
+        }
+
+        .edu-right p span {
+            font-weight: bold;
+        }
+
+        /* Style for icons */
+        .icons {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .icons li {
+            margin-right: 10px;
+        }
+
+        .icons a {
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .icons a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
     <section id="content">
-      
-      <!-- Text -->
-      <h1>Wonseop Lim</h1>
-      <p>
-      I am a post-graduate student at Seoul National University.
-      </p>
-	  <p>
-	  I am interested in a diverse range of theoretical and empirical questions arising in population genetics and phylogenetics.
-	  </p>
-	  
+        <!-- Text -->
+        <h1>Wonseop Lim</h1>
+        <p>
+            I am a post-graduate student at Seoul National University.
+        </p>
+        <p>
+            I am interested in a diverse range of theoretical and empirical questions arising in population genetics and phylogenetics.
+        </p>
 
-      <!-- Icons -->
-      <ul class="icons">
-        <li>
-          <a href="mailto:david9456@snu.ac.kr" title="E-Mail"><i class="fas fa-envelope"></i></a>
-        </li>
-        <li>
-          <a href="https://scholar.google.com/citations?user=0UBxpdMAAAAJ&hl=en" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-        </li>
-		<li>
-		<a href="https://www.researchgate.net/profile/Wonseop-Lim"><i class="ai ai-researchgate"></i></a>
-		</li>
-        <li>
-          <a href="https://github.com/isovaline2230" title="GitHub"><i class="fab fa-github"></i></a>
-        </li>
-		<li>
-		<a href="https://orcid.org/0009-0007-1004-2326"><i class="ai ai-orcid"></i></a>
-		</li>
-      </ul>
-	  
-	  <!-- Edu -->
-	  <h1>Education</h1>
+        <!-- Icons -->
+        <ul class="icons">
+            <li>
+                <a href="mailto:david9456@snu.ac.kr" title="E-Mail"><i class="fas fa-envelope"></i></a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?user=0UBxpdMAAAAJ&hl=en" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            </li>
+            <li>
+                <a href="https://www.researchgate.net/profile/Wonseop-Lim"><i class="ai ai-researchgate"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/isovaline2230" title="GitHub"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+                <a href="https://orcid.org/0009-0007-1004-2326"><i class="ai ai-orcid"></i></a>
+            </li>
+        </ul>
+
+        <!-- Edu -->
+        <h1>Education</h1>
         <div class="edu-container">
             <!-- Left Column: Mar. 2018 ~ Present -->
             <div class="edu-left">
@@ -92,8 +150,6 @@
             </div>
         </div>
     </section>
-	
-  </body>
-	
- 
+</body>
+
 </html>
