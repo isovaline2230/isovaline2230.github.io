@@ -48,37 +48,39 @@
         margin: 20px;
         text-align: left; /* Ensures the content is left-aligned */
     }
-	h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
 
-    /* Align Education section to the left */
+    /* Center the h1 title */
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        text-align: center; /* Center-aligns the title */
+    }
+
     h2 {
         font-size: 1.5rem;
         margin-bottom: 10px;
-        text-align: left; /* Left-aligns the title */
+        text-align: left;
     }
 
     /* Container to make sure both columns take the full width */
     .edu-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start; /* Ensure no extra space between the columns */
-        width: 100%; /* Ensures full container width */
+        justify-content: flex-start;
+        width: 100%;
     }
 
     /* Left Column: Mar. 2018 ~ Present */
     .edu-left {
-        flex: 1; /* Allows flexibility to take up the available space */
-        min-width: 200px; /* Ensures a minimum width for the left column */
+        flex: 1;
+        min-width: 200px;
         font-weight: bold;
     }
 
     /* Right Column: Education Details */
     .edu-right {
-        flex: 2; /* Makes the right column take up more space */
-        min-width: 500px; /* Ensures the right column is not too narrow */
+        flex: 2;
+        min-width: 400px;
         word-wrap: break-word;
         line-height: 1.5;
     }
@@ -107,16 +109,13 @@
     .bold {
         font-weight: bold;
     }
-</style>
-
-
+    </style>
 </head>
 
 <body>
     <section id="content">
         <!-- Text -->
         <h1>Wonseop Lim</h1>
-
 
         <!-- Icons -->
         <ul class="icons">
