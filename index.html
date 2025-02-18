@@ -57,23 +57,19 @@
         .edu-container {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
         }
 
         .edu-left {
-            flex: 1;
-            margin-right: 20px;
+            flex-basis: 30%;
+            font-weight: bold;
         }
 
         .edu-right {
-            flex: 1;
-        }
-
-        .edu-right p {
-            margin-bottom: 5px;
-        }
-
-        .edu-right p span {
-            font-weight: bold;
+            flex-basis: 65%;
+            word-wrap: break-word;
+            line-height: 1.5;
         }
 
         /* Style for icons */
@@ -94,6 +90,11 @@
 
         .icons a:hover {
             color: #007bff;
+        }
+
+        /* Bold Specific Text */
+        .bold {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -133,19 +134,19 @@
         <div class="edu-container">
             <!-- Left Column: Mar. 2018 ~ Present -->
             <div class="edu-left">
-                <p><span>Mar. 2018 ~ Present:</span></p>
+                <p><span class="bold">Mar. 2018 ~ Present:</span></p>
             </div>
 
             <!-- Right Column: Education Details -->
             <div class="edu-right">
                 <p>
-                    BS. Department of Earth Science Education, Seoul National University, Seoul, South Korea
+                    <span class="bold">BS</span>. Department of Earth Science Education, Seoul National University, Seoul, South Korea
                 </p>
                 <p>
-                    BS. School of Biological Sciences, Seoul National University, Seoul, South Korea (Double Major)
+                    <span class="bold">BS</span>. School of Biological Sciences, Seoul National University, Seoul, South Korea (<span class="bold">Double Major</span>)
                 </p>
                 <p>
-                    Minor. Department of Statistics, Seoul National University, Seoul, South Korea
+                    <span class="bold">Minor</span>. Department of Statistics, Seoul National University, Seoul, South Korea
                 </p>
             </div>
         </div>
