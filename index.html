@@ -87,9 +87,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: auto; 
+    padding: 20px 0;
+    line-height: 1.6;
 	}
-
 
     .additional-text {
         font-size: 0.8rem;
@@ -107,8 +108,18 @@
 	}
 	
 	@media (max-width: 768px) {
-    .avatar {
-        display: none;
+    .intro-text {
+        max-width: 90%;
+        padding: 15px 0;
+        line-height: 1.8;
+    }
+
+    section#content {
+        margin: 10px; /* Add margin to section content to avoid text being too close to edges */
+    }
+
+    .icons {
+        margin-top: 20px; /* Ensure there's some space between the icons and the intro block */
     }
 	}
 
