@@ -37,78 +37,79 @@
     />
 
     <style>
-        body {
-            font-family: 'Source Sans Pro', sans-serif;
-            line-height: 1.6;
-        }
-        
-        section#content {
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-        }
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        line-height: 1.6;
+    }
 
-        /* Align Education section to the left */
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
+    section#content {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
 
-        .edu-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 20px;
-        }
+    /* Align Education section to the left */
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
 
-        .edu-left {
-            flex-basis: 30%;
-            font-weight: bold;
-        }
+    /* Container to make sure both columns take the full width */
+    .edu-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* Ensure no extra space between the columns */
+        width: 100%; /* Ensures full container width */
+    }
 
-        .edu-right {
-            flex-basis: 65%;
-            word-wrap: break-word;
-            line-height: 1.5;
-        }
+    /* Left Column: Mar. 2018 ~ Present */
+    .edu-left {
+        flex: 1; /* Allows flexibility to take up the available space */
+        min-width: 200px; /* Ensures a minimum width for the left column */
+        font-weight: bold;
+    }
 
-        /* Style for icons */
-        .icons {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-        }
+    /* Right Column: Education Details */
+    .edu-right {
+        flex: 2; /* Makes the right column take up more space */
+        min-width: 300px; /* Ensures the right column is not too narrow */
+        word-wrap: break-word;
+        line-height: 1.5;
+    }
 
-        .icons li {
-            margin-right: 10px;
-        }
+    /* Style for icons */
+    .icons {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+    }
 
-        .icons a {
-            color: #333;
-            font-size: 1.5rem;
-        }
+    .icons li {
+        margin-right: 10px;
+    }
 
-        .icons a:hover {
-            color: #007bff;
-        }
+    .icons a {
+        color: #333;
+        font-size: 1.5rem;
+    }
 
-        /* Bold Specific Text */
-        .bold {
-            font-weight: bold;
-        }
-    </style>
+    .icons a:hover {
+        color: #007bff;
+    }
+
+    /* Bold Specific Text */
+    .bold {
+        font-weight: bold;
+    }
+</style>
+
 </head>
 
 <body>
     <section id="content">
         <!-- Text -->
         <h1>Wonseop Lim</h1>
-        <p>
-            I am a post-graduate student at Seoul National University.
-        </p>
-        <p>
-            I am interested in a diverse range of theoretical and empirical questions arising in population genetics and phylogenetics.
-        </p>
+
 
         <!-- Icons -->
         <ul class="icons">
